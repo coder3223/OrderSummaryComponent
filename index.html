@@ -6,41 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Workspace</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <main>
-      <section class="card-container">
+    <main class="card-container">
+      <img
+        src="images/illustration-hero.svg"
+        alt="hero image"
+        class="card-container-image"
+      />
+      <h2>Order Summary</h2>
+      <h5 class="gray">
+        You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like!
+      </h5>
+      <section class="plan-info">
         <img
-          src="images/illustration-hero.svg"
-          alt="hero image"
-          class="card-container-image"
+          src="images/icon-music.svg"
+          alt="music-note"
+          class="plan-info-image"
+          aria-hidden="true"
         />
-        <h2>Order Summary</h2>
-        <h5 class="gray">
-          You can now listen to millions of songs, audiobooks, and podcasts on
-          any device anywhere you like!
-        </h5>
-        <section class="plan-info">
-          <img
-            src="images/icon-music.svg"
-            alt="music-note"
-            class="plan-info-image"
-          />
-          <section class="plan-data">
-            <h5 class="plan-title">Annual Plan</h5>
-            <h5 class="gray">$59.99/year</h5>
-          </section>
-          <a href="#">Change</a>
+        <section class="plan-data">
+          <h5 class="plan-title">Annual Plan</h5>
+          <h5 class="gray">$59.99/year</h5>
         </section>
-        <div class="buttons">
-          <section>
-            <button class="payment">Proceed to Payment</button>
-          </section>
-          <section>
-            <button class="cancel gray">Cancel Order</button>
-          </section>
-        </div>
+        <a href="#">Change</a>
       </section>
+      <div class="buttons">
+        <section>
+          <button class="payment">Proceed to Payment</button>
+        </section>
+        <section>
+          <button class="cancel gray">Cancel Order</button>
+        </section>
+      </div>
     </main>
   </body>
 </html>
