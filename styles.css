@@ -1,0 +1,156 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  background-color: #e0e8ff;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #e0e8ff;
+  height: 100%;
+}
+
+h2 {
+  margin-top: 70px;
+}
+
+h5 {
+  margin: 0 50px;
+}
+
+.card-container {
+  height: 700px;
+  width: 450px;
+  background-color: white;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card-container-image {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 10px 10px 0 0;
+}
+
+.plan-info {
+  display: flex;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.plan-data {
+  justify-content: center;
+}
+
+.plan-info > a {
+  padding-top: 15px;
+  font-size: 0.7rem;
+}
+
+.plan-info > a:hover {
+  text-decoration: none;
+  color: #766cf1;
+}
+
+.plan-title {
+  padding-bottom: 10px;
+}
+
+.payment {
+  color: white;
+  background-color: hsl(245, 75%, 52%);
+  padding: 10px 85px;
+  border-radius: 10px;
+  margin: 15px 0;
+  box-shadow: 0 20px 20px 0 #d1ddff;
+}
+
+.payment:hover {
+  background-color: #766cf1;
+  cursor: pointer;
+}
+
+.cancel {
+  background: none;
+  border: none;
+  margin: 15px 0 50px 0;
+}
+
+.cancel:hover {
+  cursor: pointer;
+}
+
+.gray {
+  color: #9c9f9f;
+}
+
+@media (orientation: landscape) {
+
+  body {
+    scroll-behavior: auto;
+  }
+  .main {
+    align-items: center;
+  }
+
+  .card-container {
+    margin-top: 50px;
+  }
+
+  .cancel {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 780px) {
+  
+  .card-container {
+    width: 450px;
+    max-height: 700px;
+  }
+} 
+
+@media (max-width: 500px) {
+
+  h2 {
+    margin-top: 20px;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .card-container {
+    margin-top: 20px;
+    width: 300px;
+    height: 700px;
+    
+  }
+
+  .plan-info {
+    flex-direction: column;
+  }
+  
+  .plan-info img {
+    width: 25%;
+    align-self: center;
+  }
+
+  .payment {
+    padding: 15px;
+  }
+}
